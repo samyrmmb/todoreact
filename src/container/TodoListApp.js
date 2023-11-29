@@ -1,6 +1,7 @@
 import { Component } from "react";
 import TodoForm from "../components/TodoForm";
 import { TodoList } from "../components/TodoList";
+import { Message, WelcomeMessage } from "../components/Message";
 
 export default class TodoListApp extends Component {
     constructor(props) {
@@ -28,7 +29,7 @@ export default class TodoListApp extends Component {
         //        console.log(this.state.items)
         return (
             <div id="app" className="container">
-                <h2>ToDo List</h2>
+                <WelcomeMessage />
                 <TodoForm pushToItems={this.pushToItens} />
                 <hr />
                 <TodoList items={items} removeFromItems={this.removeFromItems} />
