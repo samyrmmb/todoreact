@@ -30,7 +30,7 @@ class TodoForm extends Component {
         const { todo } = this.state;
         return (
             <div>
-                <form class="row g-2 align-items-center">
+                <form className="row g-2 align-items-center">
                     <div className="col-sm-7">
                         <input type='text' className="form-control" value={todo} name='todo' id='todo' placeholder='Enter todo here' onChange={this.onChange} />
                     </div><div className="col-sm">
